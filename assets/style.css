@@ -1,0 +1,71 @@
+header {
+    color: #ffffff;
+}
+
+#search-panel {
+    background-color: #e9e9e9d0;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+#past-cities {
+    margin-top: 10px;
+}
+
+#past-cities button:hover {
+    color: #6b6b6b;
+    /* text-shadow: 0 0 1px #000000; */
+    font-style: italic;
+}
+
+#past-cities button {
+    border-radius:0;
+    margin-top:0;
+    margin-bottom:0;
+    border-bottom: none;
+    background-color: #ffffff;
+}
+
+#past-cities button:first-child{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+#past-cities button:last-child{
+    border-bottom: 1px solid;
+    border-bottom-left-radius:10px;
+    border-bottom-right-radius:10px;
+}
+
+#current-city {
+    padding-bottom:5px;
+}
+
+#current-weather {
+    list-style-type: none;
+    margin-top: -20px;
+}
+
+#currentIcon {
+    margin-top: -20px;
+}
+
+.current {
+    border: 1px solid gray;
+    border-radius: 10px;
+}
+
+#uv-index {
+    padding-left: 5px;
+    padding-right: 5px;
+    padding: 2px;
+    border-radius: 5px;
+    background-color:#ffffff;
+    color: #ffffff;
+}
+
+.forecastCard {
+    background-color: #3782c0;
+    color: #ffffff;
+    padding: 10px;
+    border-radius: 15px 50px;
+}
