@@ -20,7 +20,6 @@ function loadHistory () {
         history.forEach(element => {
             pastSearches.append(
                 $("<button>")
-                
                     .text(element)
                     .addClass("btn btn-lg btn-outline-secondary btn-block pastCity")
                     .attr("data-city", element)
@@ -130,7 +129,6 @@ function getWeather (city) {
                 currentDay++;
             };
       });
-
 };
 
 // Submitting search, either by clicking the search button or pressing the enter key
