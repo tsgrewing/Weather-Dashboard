@@ -20,10 +20,15 @@ function loadHistory () {
         history.forEach(element => {
             pastSearches.append(
                 $("<button>")
+                
                     .text(element)
                     .addClass("btn btn-lg btn-outline-secondary btn-block pastCity")
                     .attr("data-city", element)
             );
+        });
+        // event handler to run the getWeather function when a city button is clicked
+        $(".pastCity").on("click", function () {
+            getWeather($(this).attr("data-city"));
         });
     }
 };
@@ -135,10 +140,7 @@ userInput.on("keyup", function (event){
        addCity();
    }
 });
-// event handler to run the getWeather function when a city button is clicked
-$(".pastCity").on("click", function () {
-    getWeather($(this).attr("data-city"));
-});
+
 // clear search history from local storage and empty the search history list
 $("#clear-button").on("click", function() {
     localStorage.clear();
